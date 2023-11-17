@@ -1,15 +1,30 @@
-const int LED = 13;
-const int BUTTON = 2;
-volatile byte ledState = LOW;
+#include <ezButton.h>
+int LED = 3;
+
+#define LOOP_STATE_STOPPED 0
+#define LOOP_STATE_STARTED 1
+
+ezButton button(2);  // create ezButton object that attach to pin 7;
+int loopState = LOOP_STATE_STOPPED;
+
 void setup() {
-  pinMode(LED, OUTPUT);
-  pinMode(BUTTON, INPUT);
-  attachInterrupt(digitalPinToInterrupt(BUTTON), blinkLed, RISING);
+pinMode(LED, OUTPUT);
+
+  button.setDebounceTime(50); // set debounce time to 50 milliseconds
 }
+
 void loop() {
-  // nothing here!
-}
-void blinkLed() {
-  ledState = !ledState;
-  digitalWrite(LED, ledState);
+  button.loop(); // MUST call the loop() function first
+
+  if (button.isPressed()) {
+    if (loopState == LOOP_STATE_STOPPED)
+      loopState = LOOP_STATE_STARTED;
+    else // if(loopState == LOOP_STATE_STARTED)
+      loopState = LOOP_STATE_STOPPED;
+      digitalWrite(LED, LOW);
+  }
+
+  if (loopState == LOOP_STATE_STARTED) {
+    digitalWrite(LED, HIGH);
+  }
 }
