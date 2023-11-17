@@ -1,47 +1,36 @@
-const byte ledPin = 3;
-const byte interruptPin = 2;
-volatile byte state = LOW;
+const int buttonPin = 2;   // Druknop op pin 2
+const int ledPin = 3;      // LED op pin 3
 
-// constants won't change. They're used here to set pin numbers:
-int ledState = HIGH;        // the current state of the output pin
-int buttonState;            // the current reading from the input pin
-int lastButtonState = LOW; 
-
-// the following variables are unsigned longs because the time, measured in
-// milliseconds, will quickly become a bigger number than can be stored in an int.
-unsigned long lastDebounceTime = 0;  // the last time the output pin was toggled
-unsigned long debounceDelay = 200;    // the debounce time; increase if the output flickers
+volatile bool ledState = false;  // Huidige status van de LED
+volatile unsigned long lastDebounceTime = 0;  // Tijd voor debouncing
+unsigned long debounceDelay = 50;  // Debounce-tijd in milliseconden
 
 void setup() {
-  pinMode(ledPin, OUTPUT);
-  pinMode(interruptPin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(interruptPin), blink, RISING);
-  
-  // set initial LED state
-  digitalWrite(ledPin, ledState);
+  pinMode(buttonPin, INPUT);  // Configureer pin 2 als ingang met pull-up weerstand
+  pinMode(ledPin, OUTPUT);           // Configureer pin 3 als uitgang
+
+  attachInterrupt(digitalPinToInterrupt(buttonPin), buttonInterrupt, RISING);  // Koppel de interrupt-functie aan de opgaande flank van de drukknop
 }
 
 void loop() {
-  digitalWrite(ledPin, state);
-  int reading = digitalRead(interruptPin);
-
-  if (reading != lastButtonState) {
-    // reset the debouncing timer
-    lastDebounceTime = millis();
-  }
-
-  if ((millis() - lastDebounceTime) > debounceDelay) {
-
-    if (reading != buttonState) {
-      buttonState = reading;
-
-      if (buttonState == HIGH) {
-        ledState = !ledState;
-      }
-    }
-  }
+  // Doe hier andere taken die onafhankelijk zijn van de drukknopstatus
 }
 
-void blink() {
-  state = !state;
+void buttonInterrupt() {
+  // Lees de status van de drukknop
+  int buttonState = digitalRead(buttonPin);
+
+  // Debounce de drukknop met millis
+  if ((millis() - lastDebounceTime) > debounceDelay) {
+    // Als de knop opgaand is, wissel de status van de LED
+    if (buttonState == HIGH) {
+      ledState = !ledState;
+
+      // Schakel de LED in of uit op basis van de nieuwe status
+      digitalWrite(ledPin, ledState);
+    }
+
+    // Update de tijd van de laatste debouncing
+    lastDebounceTime = millis();
+  }
 }
