@@ -7,17 +7,17 @@ lege repository die je als template kan gebruiken om een eigen repository te sta
   
 ## specifications
 
-microcontroller:
+microcontroller: ATmega328 (Arduino Nano)
 
-motors: 
+motors: Metal Gear motor 6V-50:1
 
-h-bridge:
+h-bridge: DRV8833
 
-sensors:
+sensors: QTR-8A
 
-batteries:
+batteries: 18650 
 
-wireless communication:
+wireless communication: HC-05
 
 distance sensor - motors:
 
