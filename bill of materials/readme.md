@@ -13,10 +13,11 @@
 |         8|  Batterij oplader  |    18650 oplader       | Nieuw          |   €3,69           |   1   |      €3,69   |
 |         9|  Weerstanden |    10kΩ & 220Ω      | Recup          |   €0           |   2   |      €0   |
 |         10|  Led/knop |    Led/knop     | Recup          |   €0           |   2   |      €0   |
-|         11|  Kabels |    Kabels     | Nieuw          |   €1,25          |   3   |      €1,25   |
-|         12|  Printplaaat |    Printplaat plan B      | Nieuw          |   €0,80         |   1   |      €0,80   |
-|         13|  Pinheaders |   Pinheaders      | Nieuw          |   €2,22           |   1   |      €2,22   |
-|         14|  Wielen |    Wielen      | Nieuw          |   €0           |   2   |      €0   |
-|         15|  Frame |   PLA    | Nieuw          |   €1           |   1   |      €1  |
+|         11|  Schakelaar |    Aan/uit     | Nieuw          |   €0,83         |   1   |      €0,83   |
+|         12|  Kabels |    Kabels     | Nieuw          |   €1,25          |   3   |      €1,25   |
+|         13|  Printplaaat |    Printplaat plan B      | Nieuw          |   €0,80         |   1   |      €0,80   |
+|         14|  Pinheaders |   Pinheaders      | Nieuw          |   €2,22           |   1   |      €2,22   |
+|         15|  Wielen |    Wielen      | Nieuw          |   €0           |   2   |      €0   |
+|         16|  Frame |   PLA    | Nieuw          |   €1           |   1   |      €1  |
 |         |   |         |     |         |  Totaal |      €   |
 
