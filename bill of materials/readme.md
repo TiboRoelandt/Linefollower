@@ -17,7 +17,7 @@
 |         12|  Kabels |    Kabels     | Nieuw          |   €1,25          |   3   |      €1,25   |
 |         13|  Printplaaat |    Printplaat plan B      | Nieuw          |   €0,80         |   1   |      €0,80   |
 |         14|  Pinheaders |   Pinheaders      | Nieuw          |   €2,22           |   1   |      €2,22   |
-|         15|  Wielen |    Wielen      | Nieuw          |   €0           |   2   |      €0   |
+|         15|  Wielen |    Wielen      | Nieuw          |   €3           |   2   |      €6   |
 |         16|  Frame |   PLA    | Nieuw          |   €1           |   1   |      €1  |
 |         |   |         |     |         |  Totaal |      €   |
 
