@@ -15,13 +15,13 @@ h-bridge: DRV8833
 
 sensors: QTR-8A
 
-batteries: 18650 
+batteries: 2x 18650 li-ion
 
 wireless communication: HC-05
 
-distance sensor - motors:
+distance sensor - motors: 96mm 
 
-weight:
+weight: 245g
 
 speed: 
 
