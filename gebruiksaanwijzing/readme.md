@@ -9,12 +9,19 @@ Voor de draadloze communicatie wordt er gebruik gemaakt van een HC-05 bluetooth 
 
 #### commando's
 debug [on/off] => Opvragen van de ingestelde parrameters. 
+
 run  => Starten van de LineFollower. 
+
 stop => Stoppen van de LineFollower.  
+
 set cycle [µs]  => Instellen van de cycle time. Deze is ongeveer het dubbele van de calculation time.
+
 set power [0..255]  => Instellen van de power van de motoren. 
+
 set diff [0..1]  => Door de diff aan te passen
+
 set kp [0..]  
+
 set ki [0..]  
 set kd [0..]  
 calibrate black  
