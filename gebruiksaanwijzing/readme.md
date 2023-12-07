@@ -18,14 +18,17 @@ set cycle [µs]  => Instellen van de cycle time. Deze is ongeveer het dubbele va
 
 set power [0..255]  => Instellen van de power van de motoren. 
 
-set diff [0..1]  => Door de diff aan te passen
+set diff [0..1]  => Door de diff aan te passen zal de auto vertragen of versnellen in de bochten. Hoe hoger diff hoe meer de auto versnelt in de bochten.
 
-set kp [0..]  
+set kp [0..] => Dit is de corrigatie van de fout. Hoe hoger kp hoe sterker de auto zich corrigeert om de zwarte lijn in het midden van de sensor te hebben. Als deze te hoog is zal de auto schoken van links naar rechts over de lijn.
 
-set ki [0..]  
-set kd [0..]  
-calibrate black  
-calibrate white  
+set ki [0..] => Hoe langer de error duurt hoe sterker de linfollower zal bijsturen. 
+
+set kd [0..] => Dit is de foutverandering. Deze kijkt naar de fout uit de vorige cyclus en gaat dan de fout bijregelen. Was deze fout groot dan wordt er meer gecorigeerd.
+
+calibrate black => Hierdoor worden de zwarte waarden van de sensor gecalibreert.  
+
+calibrate white => Hierdoor worden de witte waarden van de sensor gecalibreert. 
 
 ### kalibratie
 uitleg kalibratie  
