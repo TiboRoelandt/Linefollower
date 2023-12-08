@@ -32,4 +32,5 @@ Upload het programma naar jouw arduino nano. Het programma kan je vinden onder c
 Het instellen van de parrameters gebeurd via bluetooth en de app "Serial Bluetooth Terminal" op de smartphone. De parrameters die ik gebruikt heb zijn terug te vinden bij gebruiksaanwijzing => setting. 
 
 
-Als je al bovenstaande stappen hebt volbracht is jouw auto klaar voor gebruik. Hoe je de auto verder nog insteld en gebruikt staat uitgelegd in de gebruiksaanwijzing. 
+Als je al bovenstaande stappen hebt volbracht is jouw auto klaar voor gebruik. 
+![image](https://github.com/TiboRoelandt/Linefollower/assets/146442904/4d0bf636-590d-4827-a60c-479b1e3c5f6d)
