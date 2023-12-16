@@ -12,16 +12,17 @@ Indien nodig kan je de datasheets raadplegen
 
 
 ### stap 3
-Nu gaan we de printplaat solderen. Hiervoor kan je het Layout schema raadplegen. 
+Nu gaan we de printplaat solderen. Doe dit met behulp van het elektronisch schema. 
 ![image](https://github.com/TiboRoelandt/Linefollower/assets/146442904/1562cca9-eb66-44a2-b9eb-d746d1ad9f9a)
 ![image](https://github.com/TiboRoelandt/Linefollower/assets/146442904/8d482793-9157-4049-b10d-7a2157a1927d)
 
 ### stap 4
-Het chassis kan je 3D printen. De bestanden hiervoor vind je terug onder technische tekeningen => mechanisch. Je kan ook een basisplaat maken uit bijvoorbeeld een stuk hout dat je op maat zaagt. 
+Het chassis kan je 3D printen. De bestanden hiervoor vind je terug onder technische tekeningen => mechanisch.
 De wielen zijn aangekocht die passen op de metal gear motoren.
 
 ### stap 5
 Om alles te monteren heb je M3-boutjes nodig.
+Eerst worden de motoren met de motor mounts vastgezet. Hierna wordt de batterij houder gemonteerd. Soldeer de schakelaar tussen de voeding van de batterijen. 
 Het monteren van de printplaat gebeurd rechtstreeks op het ge-3Dprinte chassis.
 Plaats de sensor ongveer in het midden van de rij gaatjes die hiervoor voorzien zijn. Later kan je dan de afstand van de sensor ten opzichte van de wielen nog aanpassen om jouw linefollower te optimaliseren. 
 
