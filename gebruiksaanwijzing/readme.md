@@ -34,7 +34,7 @@ calibrate white => Hierdoor worden de witte waarden van de sensor gecalibreert.
 Het kalibreren van de senor gebeurd met de commando's "calibrate black" en "calibrate white". Om de zwarte waarden te kalibreren moet de sensor boven een zwart oppervlak staan en dan het commando ingeven. Om de witte waarden te kalibreren gebeurd het zelfde maar op een wit oppervlak. 
 
 ### settings
-De robot rijdt stabiel met volgende parameters:  
+De robot rijdt stabiel met volgende parameters: cycle time: 3000, power: 75, diff: 0.75, kp:18, ki: 0.5, kd:0.4
 
 ### start/stop button
 Er is een start/stop button voorzien op de robot. Deze bevindt zich op de PCB, de knop is aangesloten op een intterupt pin (pin2). Deze werkt met een intterupt functie en een debounce. 
